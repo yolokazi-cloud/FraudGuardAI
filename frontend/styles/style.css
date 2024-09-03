@@ -1,0 +1,22 @@
+{
+    .progress-bar {
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    .label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .bar {
+      background-color: #333;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 20px;
+    }
+    .fill {
+      background-color: #00bfff; /* Modern blue color */
+      height: 100%;
+      transition: width 0.5s;
+    }
+  }
