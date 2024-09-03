@@ -1,11 +1,11 @@
 import React from 'react'
 
-const model_management = () => {
+const ModelManagement = () => {
   return (
     <div>
-      
+        Model Management
     </div>
   )
 }
 
-export default _
+export default ModelManagement;

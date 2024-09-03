@@ -1,11 +1,11 @@
 import React from 'react'
 
-const detailed_analysis = () => {
+const DetailedAnalysis = () => {
   return (
     <div>
-      
+      Detailed analysis
     </div>
   )
 }
 
-export default _
+export default DetailedAnalysis;

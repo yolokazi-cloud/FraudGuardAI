@@ -1,11 +1,11 @@
 import React from 'react'
 
-const system_logs = () => {
+const SystemLogs = () => {
   return (
     <div>
-      
+      System Logs
     </div>
   )
 }
 
-export default _
+export default SystemLogs;
