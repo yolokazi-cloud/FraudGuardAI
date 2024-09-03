@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({ title, content }) => {
   return (
-    <div className="nft-gray-3' rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
       <h2 className="text-2xl font-semibold">{capitalizeNames(title)}</h2>
       <ul className="list-desc pl-5 space-y-2 text-black">
         {content.map((item, index) => (

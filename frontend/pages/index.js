@@ -27,10 +27,10 @@ export default function Home() {
     "detailed-analysis": ["Transaction Details", "Feature Contribution"],
     "data-visualization": ["Fraud Trends", "Model Accuracy Over Time"],
     "system-logs": ["Error Logs", "System Performance"],
-    "model-management": ["Upload New Model", "Retrain Model"]
+    "model-management": ["Upload New Model", "Retrain Model"] 
   }
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className=" min-h-screen flex items-center justify-center bg-home-color">
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 text-base">
       {Object.entries(cardContents).map(([title, content], index) => (
         <Link key={index} href={getPageUrl(title)}>
