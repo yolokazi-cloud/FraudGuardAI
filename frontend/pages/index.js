@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import the CSS file correctly
 import './styles/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -119,3 +120,8 @@ function ProgressBar({ title, progress }) {
     </div>
   );
 }
+=======
+const Home = () => (
+  
+);
+>>>>>>> e64cadf23d4df8307de47de42f2eeb1b72802f75
