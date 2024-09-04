@@ -1,5 +1,7 @@
 import React from 'react'
 import { Card } from '@/components'
+import { values } from 'lodash';
+
 
 const Dashboard = () => {
 
@@ -17,6 +19,13 @@ const Dashboard = () => {
     { name: "Fraudulent transactions", value: "2,654" },
     { name: "Fraudulent customers", value: "2,654" }
   ]
+
+  const matrixData = {
+    truePositive: 80,
+    falsePositive: 15,
+    trueNegative: 85,
+    falseNegative: 20
+  };
     
   
   return (
@@ -58,8 +67,30 @@ const Dashboard = () => {
               ))}
           </ul>
         </Card>
-
         
+        <div className="col-span-2">
+          <Card pagename="Key Metrics">
+            <div className=" w-full grid grid-cols-2 gap-4 text-center">
+              <div className="flex flex-col items-center p-4 border-b border-gray-300">
+                <span className="mt-2 font-semibold">{matrixData.trueNegative}</span>
+                <span className="text-sm text-gray-500">True Negative</span>
+              </div>
+              <div className="flex flex-col items-center p-4 border-b border-gray-300">
+                <span className="mt-2 font-semibold">{matrixData.falseNegative}</span>
+                <span className="text-sm text-gray-500">False Negative</span>
+              </div>
+              <div className="flex flex-col items-center p-4 border-b border-gray-300">
+                <span className="mt-2 font-semibold">{matrixData.falsePositive}</span>
+                <span className="text-sm text-gray-500">False Positive</span>
+              </div>
+              <div className="flex flex-col items-center p-4 border-b border-gray-300">
+                <span className="mt-2 font-semibold">{matrixData.truePositive}</span>
+                <span className="text-sm text-gray-500">True Positive</span>
+              </div>
+            </div>
+          </Card>
+        </div>
+      
       </div>
     </div>
   )
