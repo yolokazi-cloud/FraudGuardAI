@@ -20,7 +20,7 @@ const SideBar = () => {
   const [activeLink, setActiveLink] = useState(sidebarLinks[0].path);
 
   return (
-    <section className="custom-scrollbar sticky left-0 top-0 flex h-screen flex-col justify-between overflow-y border-r shadow-light">
+    <section className="custom-scrollbar sticky left-0 top-0 flex h-screen flex-col  overflow-y border-r shadow-light">
       <Image 
         src={logo}
         width={200}
