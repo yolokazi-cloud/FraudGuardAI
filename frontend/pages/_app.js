@@ -9,9 +9,9 @@ import { Footer } from '@/components';
 const App = ({ Component, pageProps }) => (
   <div className="flex ">
     <SideBar/>
-    <BasicHeader/>
+    {/* <BasicHeader/>
     <LandingContent/>
-    <Footer/>
+    <Footer/> */}
     <div className="pt-65">
       <Component {...pageProps} />
     </div>

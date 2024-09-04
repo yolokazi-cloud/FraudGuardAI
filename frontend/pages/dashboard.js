@@ -11,10 +11,18 @@ const Dashboard = () => {
     { className: "Weighted Avg", precision: "0.82", recall: "0.82", f1Score: "0.82", support: "200" }
   ];
 
+  const fraudSummaryData = [
+    { name: "Defrauded amount", value: "$41,590.57" },
+    { name: "Fraudulent transactions", value: "2,654" },
+    { name: "Fraudulent transactions", value: "2,654" },
+    { name: "Fraudulent customers", value: "2,654" }
+  ]
+    
+  
   return (
     <div className="pl-5">
       <h2 className="text-4xl font-semibold pb-5">Dashboard</h2>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-2 gap-12">
         {/* Two cards on the top */}
         <Card pagename="Model Performance">
           <table className="min-w-full text-left text-sm">
@@ -39,6 +47,19 @@ const Dashboard = () => {
             </tbody>
           </table>
         </Card>
+
+        <Card pagename="Fraud Summary">
+          <ul className="grid grid-cols-2 gap-4">
+              {fraudSummaryData.map((item, index) => (
+                <div key={index} className="flex justify-between p-2 border-b ">
+                  <span className="font-semibold pr-3">{`${item.name}: `}</span>
+                  <span>{item.value}</span>
+                </div>
+              ))}
+          </ul>
+        </Card>
+
+        
       </div>
     </div>
   )

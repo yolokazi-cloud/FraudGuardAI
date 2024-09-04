@@ -35,7 +35,7 @@ const SideBar = () => {
             key={link.name} 
             href={link.path}
             className={`p-4 hover:bg-cyan-500 ${
-              router.pathname === link.path || activeLink === link.path ? 'bg-gray-300 font-poppins' : ''
+              router.pathname === link.path || activeLink === link.path ? 'bg-gray-300 ' : ''
             }`}
             onClick={() => setActiveLink(link.path)}
           >
