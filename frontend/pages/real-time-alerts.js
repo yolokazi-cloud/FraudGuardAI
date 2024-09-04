@@ -1,11 +1,11 @@
 import React from 'react'
 
-const real_time_alerts = () => {
+const RealTimeAlerts = () => {
   return (
     <div>
-      
+      Real Time Alerts
     </div>
   )
 }
 
-export default _
+export default RealTimeAlerts;

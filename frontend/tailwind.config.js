@@ -21,6 +21,7 @@ module.exports = {
         'file-active': '#2196f3',
         'file-accept': '#00e676',
         'file-reject': '#ff1744',
+        'home-color': '#F5F5F5',
         'overlay-black': 'rgba(0, 0, 0, 0.8)',
       },
       width: {

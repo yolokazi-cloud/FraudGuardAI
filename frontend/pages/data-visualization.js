@@ -1,11 +1,11 @@
 import React from 'react'
 
-const data_visualization = () => {
+const DataVisualization = () => {
   return (
     <div>
-      
+      Data Visualization
     </div>
   )
 }
 
-export default data-visualization
+export default DataVisualization;
