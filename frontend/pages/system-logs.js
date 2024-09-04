@@ -2,9 +2,11 @@ import React from 'react'
 
 const SystemLogs = () => {
   return (
-    <div>
+    <div className="pl-5">
+    <h2 className="text-4xl font-semibold">
       System Logs
-    </div>
+    </h2>
+  </div>
   )
 }
 
