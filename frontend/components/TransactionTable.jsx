@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Card } from '.';
 
 export default function TransactionTable() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -72,11 +73,6 @@ export default function TransactionTable() {
             ))}
           </tbody>
         </table>
-      </div>
-
-      {/* Back to top button */}
-      <div id="gotoTop" className="uil uil-angle-up" style={{ cursor: 'pointer', position: 'fixed', bottom: '20px', right: '20px' }}>
-        <a href="#">Go To Top</a>
       </div>
     </div>
   );

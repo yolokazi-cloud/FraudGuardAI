@@ -1,10 +1,12 @@
 import Script from 'next/script';
 import '../styles/globals.css';
+// import  '../styles/style.css';
 import { Component } from 'react';
 import { SideBar } from '@/components';
 import { BasicHeader } from '@/components';
 import { LandingContent } from '@/components';
 import { Footer } from '@/components';
+
 
 const App = ({ Component, pageProps }) => (
   <div className="flex ">
