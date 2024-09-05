@@ -54,7 +54,7 @@ export default function RealTimeAlerts() {
         </Card>
       </div>
 
-      <div className="">
+      <div className="mb-10">
         <Card pagename="Transaction Data" className="mt-5">
           <table className="min-w-full bg-white border border-gray-300">
             <thead>
