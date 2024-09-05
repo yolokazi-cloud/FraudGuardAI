@@ -5,7 +5,7 @@ const ModelManagement = () => {
   return (
     <div className="pl-5">
       <h2 className="text-4xl font-semibold pb-5">Model Management</h2>
-      <div className="grid grid-cols-2 gap-12 mb-10">
+      <div className="grid grid-cols-2 gap-12">
         {/* Model Details Card */}
         <Card pagename="Model Details">
           <div className="p-4">
@@ -53,14 +53,19 @@ const ModelManagement = () => {
               <label className="block mb-1">Description:</label>
               <textarea className="border border-gray-300 rounded-lg p-2 w-full" placeholder="Enter description" rows="3"></textarea>
             </div>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
-              Upload
-            </button>
+            <div className="flex justify-between">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+                Upload
+              </button>
+              <button className="bg-yellow-500 text-white px-4 py-2 rounded-lg">
+                Retrain Existing Model
+              </button>
+            </div>
           </div>
         </Card>
 
         {/* Model Actions Card */}
-        <Card pagename="Model Actions" className="">
+        <Card pagename="Model Actions">
           <div className="p-4">
             <ul className="list-none">
               <li className="mb-3">
@@ -78,7 +83,6 @@ const ModelManagement = () => {
             </ul>
           </div>
         </Card>
-
       </div>
     </div>
   );

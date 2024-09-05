@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from '@/components'
 
 const SystemLogs = () => {
   return (
@@ -6,6 +7,14 @@ const SystemLogs = () => {
     <h2 className="text-4xl font-semibold">
       System Logs
     </h2>
+    <div className="grid grid-cols-2">
+      <Card pageName="Error Logs">
+
+      </Card>
+      <Card className="System Performance">
+
+      </Card>
+      </div>
   </div>
   )
 }
