@@ -30,27 +30,27 @@ const Dashboard = () => {
   
   return (
     <div className="pl-5">
-      <h2 className="text-4xl font-semibold pb-5">Dashboard</h2>
+      <h2 className="font-poppins text-4xl font-semibold pb-5">Dashboard</h2>
       <div className="grid grid-cols-2 gap-12">
         {/* Two cards on the top */}
         <Card pagename="Model Performance">
           <table className="min-w-full text-left text-sm">
             <thead className="border-b">
               <tr>
-                <th>Class</th>
-                <th>Precision</th>
-                <th>F1-Score</th>
-                <th>Support</th>
+                <th className='font-poppins'>Class</th>
+                <th className='font-poppins'>Precision</th>
+                <th className='font-poppins'>F1-Score</th>
+                <th className='font-poppins'>Support</th>
               </tr>
             </thead>
             <tbody>
               {modelPerformanceData.map((data, index) => (
                 <tr key={index} className="border-b">
-                  <td>{data.className}</td>
-                  <td>{data.precision}</td>
-                  <td>{data.recall}</td>
-                  <td>{data.f1Score}</td>
-                  <td>{data.support}</td>
+                  <td className='font-poppins'>{data.className}</td>
+                  <td className='font-poppins'>{data.precision}</td>
+                  <td className='font-poppins'>{data.recall}</td>
+                  <td className='font-poppins'>{data.f1Score}</td>
+                  <td className='font-poppins'>{data.support}</td>
                 </tr>
               ))}
             </tbody>
@@ -61,8 +61,8 @@ const Dashboard = () => {
           <ul className="grid grid-cols-2 gap-4">
               {fraudSummaryData.map((item, index) => (
                 <div key={index} className="flex justify-between p-2 border-b ">
-                  <span className="font-semibold pr-3">{`${item.name}: `}</span>
-                  <span>{item.value}</span>
+                  <span className="font-poppins font-semibold pr-3">{`${item.name}: `}</span>
+                  <span className='font-poppins'>{item.value}</span>
                 </div>
               ))}
           </ul>
@@ -72,20 +72,20 @@ const Dashboard = () => {
           <Card pagename="Key Metrics">
             <div className=" w-full grid grid-cols-2 gap-4 text-center">
               <div className="flex flex-col items-center p-4 border-b border-gray-300">
-                <span className="mt-2 font-semibold">{matrixData.trueNegative}</span>
-                <span className="text-sm text-gray-500">True Negative</span>
+                <span className="font-poppins mt-2 font-semibold">{matrixData.trueNegative}</span>
+                <span className="font-poppins text-sm text-gray-500">True Negative</span>
               </div>
               <div className="flex flex-col items-center p-4 border-b border-gray-300">
-                <span className="mt-2 font-semibold">{matrixData.falseNegative}</span>
-                <span className="text-sm text-gray-500">False Negative</span>
+                <span className="font-poppins mt-2 font-semibold">{matrixData.falseNegative}</span>
+                <span className="font-poppins text-sm text-gray-500">False Negative</span>
               </div>
               <div className="flex flex-col items-center p-4 border-b border-gray-300">
-                <span className="mt-2 font-semibold">{matrixData.falsePositive}</span>
-                <span className="text-sm text-gray-500">False Positive</span>
+                <span className="font-poppins mt-2 font-semibold">{matrixData.falsePositive}</span>
+                <span className="font-poppins text-sm text-gray-500">False Positive</span>
               </div>
               <div className="flex flex-col items-center p-4 border-b border-gray-300">
-                <span className="mt-2 font-semibold">{matrixData.truePositive}</span>
-                <span className="text-sm text-gray-500">True Positive</span>
+                <span className="font-poppins mt-2 font-semibold">{matrixData.truePositive}</span>
+                <span className="font-poppins Stext-sm text-gray-500">True Positive</span>
               </div>
             </div>
           </Card>
